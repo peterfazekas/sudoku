@@ -29,10 +29,10 @@ public class DataParser {
     }
 
     private Step createStep(String line) {
-        String[] s = line.split(SEPARATOR);
-        int value = Integer.parseInt(s[0]);
-        int row = Integer.parseInt(s[1]);
-        int column = Integer.parseInt(s[2]);
+        String[] items = line.split(SEPARATOR);
+        int value = Integer.parseInt(items[0]);
+        int row = Integer.parseInt(items[1]);
+        int column = Integer.parseInt(items[2]);
         return new Step(value, row, column);
     }
 }
